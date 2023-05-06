@@ -16,7 +16,7 @@ const CardContainer = ()=> {
         
         <div className='sub-container-div'>
           <div className='container-title'>
-            <h1>Boys</h1>
+            <h1 className='card-container-header'>Boys</h1>
           </div>
           <div className='card-container'>
           {
@@ -33,7 +33,7 @@ const CardContainer = ()=> {
 
         <div className='sub-container-div'>
           <div className='container-title'>
-          <h1>Mans</h1>
+          <h1 className='card-container-header'>Mans</h1>
           </div>
           <div className='card-container'>
           {

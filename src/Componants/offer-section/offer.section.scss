@@ -1,0 +1,28 @@
+.offer-section-container {
+    height: 435px;
+    background-color: #F6F1F1;
+}
+
+.offer-section-header{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.offer-card-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 10%;
+}
+
+
+.offer-image{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}

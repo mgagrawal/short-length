@@ -1,0 +1,156 @@
+.navbar-react {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+
+.navbar-connect{
+    height: 40px;
+    background-color: rgb(117 159 171);
+    text-decoration: none;
+    color: black;
+    padding: 9px 100px;
+
+    .navbar-connect-conventional{
+        display: inline-block;
+    }
+
+    .navbar-connet-social-media{
+        float: right;
+    }
+
+    .navbar-connet-social-media:hover{
+        float: right;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px;
+    }
+
+    a:hover{
+        color: black;
+    }
+}
+
+
+// Navigation bar
+nav {
+    padding: 0 7% 0 8%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F6F9;
+
+    .logo{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+
+    }
+
+    .menu{
+        
+        margin: 0;
+        padding: 10px 0;
+
+        > li, > .navbar-link{
+            display: inline-block;            
+        }
+        
+        li{
+            position: relative;
+        }
+
+        .navbar-link{
+            text-decoration: none;
+            color: rgb(0 0 0 / 55%);
+            display: block;
+            padding: 10px 1rem;
+            font-weight: 500;
+            transition: color 0.22s ease;
+        }
+        
+        .navbar-link:hover {
+            color: black;
+            transform: scale(1.10);
+        }
+
+    }
+
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    list-style: none;
+    
+}
+
+.submenu {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.submenu > li {
+    background-color:rgb(117, 159, 171);
+}
+
+.submenu2 {
+    position: absolute;
+    padding: 0;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.submenu2 > li {
+    background-color:rgb(117, 159, 171);
+}
+
+.menu li:hover > .submenu {
+    display: block;
+    animation: slideup .3s ease;
+}
+
+.submenu li:hover > .submenu2 {
+    display: block;
+    animation: slideleft .2s ease;
+}
+
+
+// Animation defining
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+

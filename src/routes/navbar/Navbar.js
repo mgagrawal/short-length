@@ -1,40 +1,38 @@
 import { Fragment } from "react"
-import { Outlet, Link } from "react-router-dom"
+import Navigationbar from './Navbar.conmponant';
+import NavbarConnect from "./navbar.connect.componant";
+import {navbarConnectDataCon, navbarConnectDataSM} from "./navbar.connect.data";
+import './navbar.connect.scss'
 
-import navbarConnectData from "./navbar.connect.data"
-import NavbarConnect from "./navbar.connect.componant"
 
-const Navbar = ()=> {
+
+const Navbar1 = ()=> {
+    
+
     return (
         <Fragment>
-            <div className="navbar-connet">
-                {
-                navbarConnectData.map( (data)=> {
+            <div className="navbar-connect">
+            <div className="navbar-connect-conventional">
+            {
+                navbarConnectDataCon.map( (data)=> {
                 const {id, prefix, symbol, text} = data
-                return (<span key={id}> <NavbarConnect prefix={prefix} text={text} symbol={symbol}/> </span>)
+                return (<span key={id}> <NavbarConnect className='navbar-coonect-data' prefix={prefix} text={text} symbol={symbol}/> </span>)
                 })
                 }
+            </div>
+            <div className="navbar-connet-social-media">
+                {
+                navbarConnectDataSM.map( (data)=> {
+                const {id, prefix, symbol, text} = data
+                return (<span key={id}> <NavbarConnect className='navbar-coonect-data' prefix={prefix} text={text} symbol={symbol}/> </span>)
+                })
+                }
+              </div>
+             </div>   
 
-            </div>
-            <div className="navbar-contant">
-                <span>Logo  </span>
-                <Link to='/'>Home </Link>
-                <Link to='/AboutUs'>About us </Link>
-                <Link to='/Shirt'>Shirt </Link>
-                <Link to='/TShirt'>TShirt </Link>
-                <Link to='/Jeans'>Jeans </Link>
-                <Outlet />
-            </div>
-        </Fragment>
-    )
+            <Navigationbar />
+         </Fragment>
+     )
     }
 
-export default Navbar
-
-
-// {
-//     navbarConnectData.map( (data)=> {
-//       const {id, prefix, symbol, text} = data
-//       return (<div key={id}> <NavbarConnect prefix={prefix} text={text} symbol={symbol}/> </div>)
-//     })
-//   }
+export default Navbar1
