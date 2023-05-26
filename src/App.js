@@ -8,7 +8,9 @@ import TShirt from './routes/t-shirt/t-shirt.componant';
 import Jeans from './routes/jeans/jeans.componant';
 import AboutUs from './routes/about-us/about-us.componant';
 import Footer from './routes/footer/footer.componant';
-// import Modal from './Componants/modal/modal.js';
+import GoToTop from './Componants/goToTop/goToTop.componant.js';
+import WholesaleInquiry from './routes/wholesale-inquiry/wholesale.inquiry.js';
+
 
 import './App.css';
 import { Fragment } from 'react';
@@ -21,15 +23,17 @@ function App() {
     return (
   <Fragment>
   <Navbar1 />
-  {/* <Modal isSubmitted={isSubmitted} onSubmitted={()=> setSubmitted(true)}/> */}
   <Routes>
-      <Route path="/" element={<Homepage isSubmitted={isSubmitted} onSubmitted={()=> setSubmitted(true)}/>}/> 
+      <Route path="/short-length" element={<Homepage isSubmitted={isSubmitted} onSubmitted={()=> setSubmitted(true)}/>}/> 
         <Route path='/AboutUs' element={<AboutUs />}/>
         <Route path='/Jeans' element={<Jeans />}/>
         <Route path='/TShirt' element={<TShirt />}/>
         <Route path='/Shirt' element={<Shirt />}/>
+        <Route path='/wholesale-inquiry' element={<WholesaleInquiry />}/>
+        <Route path='/retail-inquiry' element={<Shirt />}/>
   </Routes>
   <Footer />
+  <GoToTop />
   </Fragment>   
 )
 }

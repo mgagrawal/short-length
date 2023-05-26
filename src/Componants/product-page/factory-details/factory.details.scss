@@ -1,0 +1,46 @@
+.factory-details-container{
+    text-align: center;
+}
+
+
+.company-details-button{
+    background-color: rgb(248, 155, 16);
+    height: 40px;
+    width: 300px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto 10px auto;
+    padding: 3px 0;
+    border-radius: 5px;
+}
+
+
+.our-factoy-button{
+    background-color:#0070C0;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px auto 30px auto;
+    padding: 3px 0;
+    border-radius: 5px;
+}
+
+.factory-image-carousel-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1% 5%;
+    border-radius: 2px;
+    margin: 0 10% 2% 10%;
+    // border: 1px black dotted;
+    box-shadow: 8px 5px 4px rgba(0, 0, 0, 0.1),
+    -3px -4px 4px rgba(0, 0, 0, 0.1),
+    3px -3px 4px rgba(0, 0, 0, 0.1);
+    background-color:white; 
+}

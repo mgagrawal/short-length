@@ -1,0 +1,38 @@
+.gototop-button{
+ background-color: rgba(18, 19, 18, 0.7);
+ position: fixed;
+ bottom: 2%;
+ left: 95%;
+ height: 50px;
+ width: 50px;
+ z-index: 2;
+ border-radius: 50%;
+ text-align: center;
+ padding: 9px 0 0 0;
+ font-size: 1.3rem;
+ transform: translate(-50%, -50%);
+ 
+ 
+}
+
+.gototop-button:hover{
+    cursor: pointer;
+}
+
+.gototop-button i {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+    animation: gotoup 0.8s ease infinite alternate-reverse;
+  }
+
+
+  @keyframes gotoup {
+    0% {
+      transform: translateY(-0.4rem);
+    }
+    100% {
+      transform: translateY(0.3rem);
+    }
+  }
+  

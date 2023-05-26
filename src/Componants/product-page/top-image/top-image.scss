@@ -1,0 +1,22 @@
+.top-image-prodcut{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.top-image-text{
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px #607d8b!important;
+    font-style: italic!important;
+}
