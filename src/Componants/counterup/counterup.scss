@@ -1,0 +1,19 @@
+.couterup-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2% 15%;
+    background-color: #F6F1F1;
+
+    .counterup-number{
+        color: #F78010;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .counterup-description{
+        color: rgb(122, 122, 122);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}

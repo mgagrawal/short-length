@@ -7,9 +7,9 @@ const Navigationbar = ()=> {
     return (
 
         <nav>
-            <h1><Link className="navbar-link logo" to='/'>LOGO</Link></h1>
+            <h1><Link className="navbar-link logo" to='/short-length'>LOGO</Link></h1>
             <ul className="menu">
-                <li><Link className="navbar-link" to='/'>HOME</Link></li>
+                <li><Link className="navbar-link" to='/short-length'>HOME</Link></li>
                 <li><Link className="navbar-link" to='/AboutUs'>ABOUT US</Link> </li>
                 <li><Link className="navbar-link">KIDS</Link>
                     <ul className="submenu">
@@ -38,7 +38,7 @@ const Navigationbar = ()=> {
                 </li>
                 <li><Link className="navbar-link" to='/'>ENQUIRY</Link>
                     <ul className="submenu">
-                                <li><Link className="navbar-link" to='/Shirt'>WHOLESALE INQUIRY</Link></li>
+                                <li><Link className="navbar-link" to='/wholesale-inquiry'>WHOLESALE INQUIRY</Link></li>
                                 <li><Link className="navbar-link" to='/TShirt'>RETAIL INQUIRY</Link></li>
                     </ul>
                 </li>
